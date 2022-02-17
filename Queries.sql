@@ -6,6 +6,7 @@ JOIN Invoice INV ON CUS.CustomerId = INV.CustomerId
 GROUP BY CUS.CustomerId
 ORDER BY Total_Spent DESC
 LIMIT 10
+-------------------------------------------------------------------------
 
 /* Query 2 */
 SELECT DISTINCT CUS.Email,
@@ -19,7 +20,7 @@ JOIN Track T ON INVL.TrackId = T.TrackId
 JOIN Genre G ON T.GenreId = G.GenreId
 WHERE G.Name = 'Rock'
 ORDER BY CUS.Email
-
+-------------------------------------------------------------------------
 
 /* Query 3 */
 SELECT AR.Name,
@@ -33,7 +34,7 @@ GROUP BY AR.ArtistId,
          AR.Name
 ORDER BY Songs DESC
 LIMIT 10
-
+-------------------------------------------------------------------------
 
 /* Query 4 */
 SELECT AR.Name,
